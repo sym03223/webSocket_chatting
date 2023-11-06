@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/websocket.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <meta charset="UTF-8">
+    <title>Chatting Service</title>
+</head>
+
+<body>
+<div id="container" class="container">
+    <h1>자유채팅방</h1>
+    <input type="hidden" id="sessionId" value="">
+
+    <div id="chating" class="chating">
+    </div>
+
+    <div id="yourName">
+        <table class="inputTable">
+            <tr>
+                <th>닉네임</th>
+                <th><input type="text" name="userName" id="userName"></th>
+                <th><button onclick="chatName()" id="startBtn">채팅 참가</button></th>
+            </tr>
+        </table>
+    </div>
+    <div id="yourMsg">
+        <table class="inputTable">
+            <tr>
+                <th>메시지</th>
+                <th><input id="chatting" placeholder="보내실 메시지를 입력하세요."></th>
+                <th><button onclick="send()" id="sendBtn">보내기</button></th>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
